@@ -69,3 +69,17 @@ for (let i = 0; i < domThumbnails.length; i++) {
 // Autoplay
 let autoplayFn = setInterval(nextFn, 3_000);
 autoplayFn;
+
+// Buttons
+const startBtn = document.getElementById('start');
+const stopBtn = document.getElementById('stop');
+
+startBtn.addEventListener('click', function() {
+    clearInterval(autoplayFn);
+    autoplayFn = setInterval(nextFn, 3000);
+    stopBtn.innerHTML = '&#9208;';
+});
+stopBtn.addEventListener('click', function() {
+    clearInterval(autoplayFn);
+    stopBtn.innerHTML = '&#9632;';
+});
