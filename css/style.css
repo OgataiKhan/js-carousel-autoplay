@@ -29,8 +29,13 @@ body img {
 
 .item {
     height: 100%;
-    display: none;
-    position: relative;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 0.4s;
 }
 
 .item img,
@@ -41,7 +46,7 @@ body img {
 }
 
 .item.active {
-    display: block;
+    opacity: 1;
 }
 
 .prev, .next {
@@ -107,6 +112,7 @@ My css
     height: calc(100% / 5);
     opacity: 0.6;
     cursor: pointer;
+    transition: 0.4s;
 }
 
 .thumbnails .thumbnail.highlighted {
