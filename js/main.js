@@ -65,3 +65,7 @@ for (let i = 0; i < domThumbnails.length; i++) {
         domThumbnails[currentSlide].classList.add('highlighted');
     });
 }
+
+// Autoplay
+let autoplayFn = setInterval(nextFn, 3_000);
+autoplayFn;
