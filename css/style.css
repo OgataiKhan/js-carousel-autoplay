@@ -18,6 +18,7 @@ body img {
     margin: 0 auto;
     display: flex;
     align-items: center;
+    position: relative;
 }
 
 .items {
@@ -118,4 +119,22 @@ My css
 .thumbnails .thumbnail.highlighted {
     opacity: 1;
     border: 2px solid #d3d3d3
+}
+
+.buttons {
+    position: absolute;
+    bottom: 0;
+    z-index: 9;
+    display: flex;
+    gap: 1px;
+}
+
+.btn {
+    font-size: 40px;
+    width: 60px;
+    height: 60px;
+    display: block;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: rgba(255, 255, 255, 0.5);
+    border: none;
 }
